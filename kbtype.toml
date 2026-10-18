@@ -1,0 +1,35 @@
+# PARA: a KB type for AutoDoc (ADR 1792349867). Format 1.
+format = 1
+name = "para.kb"
+title = "PARA"
+description = "Tiago Forte's PARA: Projects, Areas, Resources and Archives, filed by how actionable they are."
+autodoc = ">=0.2.0"
+
+[workspace]
+include = ["**/*.md"]
+embedding_policy = "always"
+schema = "_schema/frontmatter.yaml"
+
+[[folder]]
+path = "projects"
+purpose = "goals with a deadline, one folder per project"
+
+[[folder]]
+path = "areas"
+purpose = "responsibilities kept up over time, with no end date"
+
+[[folder]]
+path = "resources"
+purpose = "topics of interest and reference material"
+
+[[folder]]
+path = "archives"
+purpose = "inactive projects, areas and resources"
+
+[[folder]]
+path = "_templates"
+purpose = "a template per note type"
+
+[[folder]]
+path = "_schema"
+purpose = "the frontmatter types this KB validates"
